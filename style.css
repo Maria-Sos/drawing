@@ -63,5 +63,5 @@ button {
 }
 
 #board {
-    cursor: url('pen.ico'), default;
+    cursor: progress;
 }
