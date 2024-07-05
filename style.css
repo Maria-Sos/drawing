@@ -2,10 +2,41 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: "Wittgenstein", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgb(230, 230, 230);
 }
 
 h1 {
-    margin-left: 45%;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px #351850;
+    color: #664786;
+}
+
+.paintPanel {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #240e38;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: rgb(143, 112, 171);
+    box-shadow: 5px 5px 5px #351850;
+}
+
+#pick-color{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+#width-line {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
 }
 
 #toolbar {
@@ -14,6 +45,7 @@ h1 {
 
 label {
     padding: 5px;
+    margin-right: 5px;
 }
 
 #width-line {
@@ -21,10 +53,15 @@ label {
 }
 
 button {
-    padding: 10px;
-    margin-top: 10px;
+    padding: 7px;
+    margin: 10px;
     border: none;
-    background-color: crimson;
+    background-color: #423032;
     color: white;
-    border-radius: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#board {
+    cursor: url('pen.ico'), default;
 }
